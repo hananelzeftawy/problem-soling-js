@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 01</title>
+
+    <!-- Bootsrap Css File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+
+    <div id="carouselExampleIndicators"
+        class="carousel slide d-flex align-items-center flex-column justify-content-center"
+        data-interval="false">
+
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="carousel-item active">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading heading-1">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question question-1">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>1</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allow to user enter number then print it</h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input">
+                                <input type="text" class="form-control" id="input-1" placeholder="Enter A Number">
+                                <p class="hint" id="hint-1"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question1()">Check</button>
+                        </div>
+                        <div class="output" id="output-1"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>2</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that take number from user then print yes if that number can divide by 3
+                                and 4 otherwise print no</h2>
+                        </div>
+                        <div class="answer flex-column flex-sm-row align-items-center align-items-sm-start">
+                            <div class="mb-2 input">
+                                <input type="text" class="form-control" id="input-2" placeholder="Enter A Number">
+                                <p class="hint" id="hint-2"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question2()">Check</button>
+                        </div>
+                        <div class="output" id="output-2"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>3</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows the user to insert 2 integers then print the max</h2>
+                        </div>
+                        <div class="answer  flex-column flex-sm-row align-items-center align-items-sm-start">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-3-1" placeholder="Enter First Num">
+                                <p class="hint" id="hint-3-1"></p>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-3-2" placeholder="Enter Second Num">
+                                <p class="hint" id="hint-3-2"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question3()">Check</button>
+                        </div>
+                        <div class="output" id="output-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>4</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows the user to insert an integer then print negative if it is
+                                negative number otherwise print positive.</h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-4" placeholder="Enter A Numer">
+                                <p class="hint" id="hint-4"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question4()">Check</button>
+                        </div>
+                        <div class="output" id="output-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>5</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that take 3 integers from user then print the max element and the min
+                                element.
+                            </h2>
+                        </div>
+                        <div class="answer flex-column flex-md-row align-items-center align-items-md-start">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-5-1" placeholder="Enter First Num">
+                                <p class="hint" id="hint-5-1"></p>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-5-2" placeholder="Enter Second Num">
+                                <p class="hint" id="hint-5-2"></p>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-5-3" placeholder="Enter Third Num">
+                                <p class="hint" id="hint-5-3"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question5()">Check</button>
+                        </div>
+                        <div class="output" id="output-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>6</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows the user to insert integer number then check If a number is
+                                oven or odd
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-6" placeholder="Enter A Numer">
+                                <p class="hint" id="hint-6"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question6()">Check</button>
+                        </div>
+                        <div class="output" id="output-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>7</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then
+                                print vowel otherwise print consonant
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-7" placeholder="Enter A Character">
+                                <p class="hint" id="hint-7"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question7()">Check</button>
+                        </div>
+                        <div class="output" id="output-7"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>8</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows userto insert integer then print all numbers between 1 to
+                                that’s number
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-8" placeholder="Enter An Integer">
+                                <p class="hint" id="hint-8"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question8()">Check</button>
+                        </div>
+                        <div class="output" id="output-8"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>9</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows userto insert integerthen print a multiplication table up to
+                                12
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-9" placeholder="Enter An Integer">
+                                <p class="hint" id="hint-9"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question9()">Check</button>
+                        </div>
+                        <div class="output" id="output-9"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>10</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that allows to user to insert number then print all even numbers
+                                between 1 to this number
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-10" placeholder="Enter An Integer">
+                                <p class="hint" id="hint-10"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question10()">Check</button>
+                        </div>
+                        <div class="output" id="output-10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>11</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program that take two integers then print the power
+                            </h2>
+                        </div>
+                        <div class="answer flex-column flex-sm-row align-items-center align-items-sm-start">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-11-1" placeholder="Enter An Integer">
+                                <p class="hint" id="hint-11-1"></p>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-11-2" placeholder="Enter An Integer">
+                                <p class="hint" id="hint-11-2"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question11()">Check</button>
+                        </div>
+                        <div class="output" id="output-11"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>12</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to enter marks of five subjects and calculate total, average and
+                                percentage.
+                            </h2>
+                        </div>
+                        <div class="answer flex-column flex-lg-row align-items-center align-items-lg-start">
+                            <div class="d-flex">
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-12-1" placeholder="Enter Mark-1">
+                                    <p class="hint" id="hint-12-1"></p>
+                                </div>
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-12-2" placeholder="Enter Mark-2">
+                                    <p class="hint" id="hint-12-2"></p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-12-3" placeholder="Enter Mark-3">
+                                    <p class="hint" id="hint-12-3"></p>
+                                </div>
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-12-4" placeholder="Enter Mark-4">
+                                    <p class="hint" id="hint-12-4"></p>
+                                </div>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-12-5" placeholder="Enter Mark-5">
+                                <p class="hint" id="hint-12-5"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question12()">Check</button>
+                        </div>
+                        <div class="output" id="output-12"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>13</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to input month number and print number of days in that
+                                month.
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-13" placeholder="Month Number">
+                                <p class="hint" id="hint-13"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question13()">Check</button>
+                        </div>
+                        <div class="output" id="output-13"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 14 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>14</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to input marks of five subjects
+                                Physics, Chemistry, Biology, Mathematics and Computer
+                                , Find percentage and grade
+                            </h2>
+                        </div>
+                        <div class="answer flex-column flex-lg-row align-items-center align-items-lg-start">
+                            <div class="d-flex">
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-14-1" placeholder="Enter Mark-1">
+                                    <p class="hint" id="hint-14-1"></p>
+                                </div>
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-14-2" placeholder="Enter Mark-2">
+                                    <p class="hint" id="hint-14-2"></p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-14-3" placeholder="Enter Mark-3">
+                                    <p class="hint" id="hint-14-3"></p>
+                                </div>
+                                <div class="mb-2 input mx-1">
+                                    <input type="text" class="form-control" id="input-14-4" placeholder="Enter Mark-4">
+                                    <p class="hint" id="hint-14-4"></p>
+                                </div>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-14-5" placeholder="Enter Mark-5">
+                                <p class="hint" id="hint-14-5"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question14()">Check</button>
+                        </div>
+                        <div class="output" id="output-14"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>15</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to print total number of days in month
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-15" placeholder="Month Number">
+                                <p class="hint" id="hint-15"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question15()">Check</button>
+                        </div>
+                        <div class="output" id="output-15"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 16 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>16</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to check whether an alphabet is vowel or consonant
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-16" placeholder="Enter A Character">
+                                <p class="hint" id="hint-16"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question16()">Check</button>
+                        </div>
+                        <div class="output" id="output-16"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 17 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>17</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to find maximum between two numbers</h2>
+                        </div>
+                        <div class="answer flex-column flex-sm-row align-items-center align-items-sm-start">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-17-1" placeholder="Enter First Num">
+                                <p class="hint" id="hint-17-1"></p>
+                            </div>
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-17-2" placeholder="Enter Second Num">
+                                <p class="hint" id="hint-17-2"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question17()">Check</button>
+                        </div>
+                        <div class="output" id="output-17"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 18 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>18</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to check whether a number is even or odd
+                            </h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-18" placeholder="Enter A Numer">
+                                <p class="hint" id="hint-18"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none " onclick="question18()">Check</button>
+                        </div>
+                        <div class="output" id="output-18"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Item 19 -->
+            <div class="carousel-item">
+                <div class="assignment" id="1">
+                    <div class="container shadow">
+                        <div class="heading">
+                            <h1>Assignment <span>1</span></h1>
+                        </div>
+                        <div class="question">
+                            <div class="line-0"></div>
+                            <div class="line-1"></div>
+                            <span>19</span>
+                            <div class="line-2"></div>
+                            <h2>Write a program to check whether a number is positive or negative or zero</h2>
+                        </div>
+                        <div class="answer">
+                            <div class="mb-2 input mx-1">
+                                <input type="text" class="form-control" id="input-19" placeholder="Enter A Numer">
+                                <p class="hint" id="hint-19"></p>
+                            </div>
+                            <button class="btn btn-dark shadow-none" onclick="question19()">Check</button>
+                        </div>
+                        <div class="output" id="output-19"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item calc">
+                <div class="calContainer shadow-lg">
+                    <div id="inputLabel">0</div>
+                    <div class="button btn-ac">
+                        <button class="remove-btn" onclick="pushBtn(this);">AC</button>
+                    </div>
+                    <div class="button">
+                        <button class="calc-btn div-btn" onclick="pushBtn(this);">/</button>
+                    </div>
+                    <div class="button">
+                        <button class="calc-btn div-btn" onclick="pushBtn(this);">%</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">7</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">8</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">9</button>
+                    </div>
+                    <div class="button">
+                        <button class="calc-btn" onclick="pushBtn(this);">*</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">4</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">5</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">6</button>
+                    </div>
+                    <div class="button">
+                        <button class="calc-btn" onclick="pushBtn(this);">-</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">1</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">2</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">3</button>
+                    </div>
+                    <div class="button">
+                        <button class="calc-btn" onclick="pushBtn(this);">+</button>
+                    </div>
+                    <div class="button btn-zero">
+                        <button onclick="pushBtn(this);">0</button>
+                    </div>
+                    <div class="button">
+                        <button onclick="pushBtn(this);">.</button>
+                    </div>
+                    <div class="button equal-btn">
+                        <button onclick="pushBtn(this);">=</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-indicators position-static carousel-btns flex-wrap flex-md-wrap justify-content-center">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">1</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2">2</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3">3</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 3">4</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 3">5</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 3">6</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 3">7</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 3">8</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                    aria-label="Slide 3">9</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                    aria-label="Slide 3">10</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                    aria-label="Slide 3">11</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+                    aria-label="Slide 3">12</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
+                    aria-label="Slide 3">13</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
+                    aria-label="Slide 3">14</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
+                    aria-label="Slide 3">15</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
+                    aria-label="Slide 3">16</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
+                    aria-label="Slide 3">17</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17"
+                    aria-label="Slide 3">18</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18"
+                    aria-label="Slide 3">19</button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19"
+                    aria-label="Slide 3">20</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="2"></div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
